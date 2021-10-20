@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --buttonBeforHover :#71deec;
+    --buttonHover: #2fdbf1;
+    --buttonClick: #11b4f0;
+}
 body{
     display : flex;
     justify-content: center;
@@ -11,11 +16,17 @@ legend{
     text-align: center;
 }
 .botonValidador{
-    width: 100%;
-    background-color: #71deec;
+    width: 70%;
+    background-color:var(--buttonBeforHover);
     text-align: center;
     border-radius: 15px;
     padding: 1%;
+    margin-left:15%;
+    margin-right:15%;
+}
+.botonValidador:hover{
+    background-color: var(--buttonHover);
+    cursor:pointer;
 }
 #validation-text{
     text-align: center;
@@ -24,24 +35,33 @@ legend{
     .section{
         width: 90vw;
         height: 70vh;
+        justify-content: center;
+        box-shadow: var(--buttonBeforHover);
     }
 }
 @media screen and (min-width:768px) {
     .section{
         width: 70vw;
-        height: 70vh;
+        height: 90vh;
+        justify-content: center;
+        border: 2px var(--buttonBeforHover) solid;
     }
 }
 @media screen and (min-width:1024px) {
     .section{
-        width: 50vw;
-        height: 70vh;
+        width: 60vw;
+        height: 90vh;
+        padding: 2%;
         justify-content: center;
+        border: 2px var(--buttonBeforHover) solid;
+        border-radius: 10px;
     }
 }
 @media screen and (min-width:1440px) {
     .section{
         width: 30vw;
-        height: 60vh;
+        height: 90vh;
+        justify-content: center;
+        border: 2px var(--buttonBeforHover) solid;
     }
 }

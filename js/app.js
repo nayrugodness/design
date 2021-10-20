@@ -2,6 +2,7 @@ let date_birthday = document.getElementById('fecha');
 
 const compararEdad = document.getElementById('mostrar');
 const mostrarResultadoValidacion = document.getElementById('validation-text');
+const imagenCambiante = document.getElementById('imagenCambiante');
 
 compararEdad.addEventListener('click', mostrar);
 
@@ -28,9 +29,15 @@ function mostrar(){
     userAgeMonths = month - userMonth;
     userAgeDay = day - userDay;
 
+    console.log(userAgeYears);
+    console.log(userAgeMonths);
+    console.log(userAgeDay);
+
     if (userAgeYears >= 18 && userAgeMonths >=0 && userAgeDay >= 0) {
        mostrarResultadoValidacion.textContent = `Usted es mayor de edad` ;
+       imagenCambiante.setAttribute("src", "img/mayorDeEdad.jpg");
     }else{
          mostrarResultadoValidacion.textContent = `Usted es menor de edad` ;
+         imagenCambiante.setAttribute("src", "img/menorDeEdad.jpg");
       }
 }
