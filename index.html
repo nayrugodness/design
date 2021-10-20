@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Territorium | Calcular edades</title>
+</head>
+<body>
+    <section class="section">
+        <fieldset class="form-group">
+            <legend><span>Validador de edad</span></legend>
+            <br>
+            <div class="row">
+               <div class="col-sm-6">
+                <label for=""> Elige la fecha de tu cumpleaños</label>
+               </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <div class="date-input">
+                    <input id="fecha"  class="dateControl" placeholder="Date of birth" type="date" value="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="botonValidador" id="mostrar">
+                        Mostrar
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p id="validation-text">Aquí verás el resultado de la validación...</p>
+                </div>
+            </div>
+          </fieldset>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+</html>
